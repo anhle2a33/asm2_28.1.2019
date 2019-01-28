@@ -1,0 +1,253 @@
+html {
+	box-sizing: border-box;
+}
+body {
+	font-size: 15px;
+	margin: 0;
+	color: #333333;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+.main-container {
+	width: 100%;
+	max-width: 1278px;
+	
+	margin: 0 auto;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+	.menu-wrapper{
+		width: 85%;
+		margin: 0 auto;
+		background-color:#FFFFFF;
+		padding-top:1%;
+		
+	}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #FFFFFF;
+	}
+	li a {
+		display: block;
+		color: #333333;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-family:serif,sans-serif;
+        font-weight: bold;
+	}
+	.left {
+		float: left;
+	}
+	.right {
+		float: right;
+	}
+
+
+	#banner {
+		background-image: url('https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png');
+		height: 500px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top:140px;
+		padding-left: 70px;
+	}
+	#banner img {
+		width: 100%;
+		max-width: 1278px;
+	}
+	.banner-text {
+		color: white;
+		font-family:sans-serif;
+		font-size: 2em;		
+	}
+	
+	.intro-text h2 {
+		margin: 0;
+	}
+	#banner p {
+		font-size: 25px;
+		margin: 0;
+	}
+
+	#main-block {
+		background-color: #ededed;
+	}
+	.img-container, 
+	.intro-text{
+		width: 96%;
+		margin: 0 auto;
+		padding-left:5%;
+	}
+	.intro-text h2, .intro-text p {
+		padding-left:3%;	
+	}
+	.img-wrapper {
+		float: left;
+		width: 31%;
+		padding-top:2%;
+		padding-bottom:2%;
+	}
+	.img-wrapper img {
+		width: 100%;
+	}
+	.col1,
+	.col2,
+	.col3{
+		padding-left:3%;
+	}	
+	#newyork,
+	#paris {
+		padding-top:8.3333333%;
+	}
+
+
+	#footer {
+		background-color:#F3F3F3;
+	}
+	.footer-block {
+		width: 96%;
+		margin: 0 auto;
+		padding-left:5%;		
+	}
+	.footer-block div {
+		float: left;
+		width: 32%;
+		padding-bottom:5%;
+	}
+	a {color: #4cb0b1;
+		padding: .5em 0;
+		display: inline-block;
+		text-decoration: none;
+	}
+
+@media only screen and (max-width: 992px){
+body {
+	color: none;
+}
+
+	.menu-wrapper {
+		width: 100%;
+	}
+	ul{
+		padding-left:1% 5% 0% 5%;
+		background-color: #556270;
+	}
+	li a {
+		color: #FFFFFF;
+		padding: 10px 8px;
+		font-size:10px;
+	}
+
+	#banner {
+		position: static;
+		background-color:#FFFFFF;
+		padding-top:2%;
+	}
+	#banner img {
+		display: none;
+	}
+	.banner-text { 
+		color: #556270;
+		position: static;
+		padding-left:5%;
+	}
+	#banner h1 {
+		font-size:30px;
+		padding-top:5%;
+	}
+	#banner p {
+		font-size: 15px;
+		padding-bottom:2%;
+		border-bottom: 2px solid #BDBDBD;
+	}
+
+	#main-block {
+		background-color:#FFFFFF;
+	}
+ 	.img-container, 
+	.intro-text {
+		color: #556270;
+		width: 96%;
+		margin: 0 auto;
+		padding-left:0%;
+	}	
+	.col1, .col2,.col3 { 
+		width:48%;
+		float:left;
+	}
+
+	#footer { 
+		background-color:#FFFFFF;
+	}
+	.footer-block{
+		padding-left:0%
+	}
+	.footer-block div {
+		float: none;
+		width: 100%;
+	}
+
+}
+
+@media only screen and (max-width:768px){
+
+   
+	ul {
+		padding-top:5%;
+		padding-left:3%;
+	}
+	li a {
+		font-size:8px;
+	}
+	.left, .right {
+		float:left;
+	}
+
+	#banner h1 {
+		font-size:20px;
+	}
+	#banner p {
+		font-size: 13px;
+		border-bottom:0;
+	}
+
+	.intro-text h1{
+		font-size:20px;
+		padding-top:10%;
+	}
+	.intro-text p{
+		font-size:12px;
+	}	
+	.col1, .col2,.col3{ 
+		width:100%;
+		float:none;
+		padding-top:0;
+		padding-bottom:0;
+	}
+	
+	a:visited { 
+		color: #4cb0b1;
+	  }
+	#mexico,
+	#tokyo,
+	#newyork,
+	#paris,
+	#invite{
+		padding-top:2%;
+		padding-bottom:2%;
+	}
+}
